@@ -1,0 +1,13 @@
+<!--pages/test/test.wxml-->
+<view class="div1" wx:if="{{condition}}" >
+  {{message}}
+</view> 
+
+----------
+
+<view wx:for="{{arr}}">
+{{index}},{{item}}
+</view>
+<button bindtap="pushItem">按钮</button>
+----------
+
