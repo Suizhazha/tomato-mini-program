@@ -12,3 +12,5 @@
   </view>
 
 </view>
+
+<navigator url="/pages/test/test?id=1">go to test</navigator>

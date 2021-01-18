@@ -2,12 +2,51 @@
 <view class="div1" wx:if="{{condition}}" >
   {{message}}
 </view> 
+------------------------------
+<view class="div1" hidden="{{condition}}" >
+  {{message}}
+</view> 
 
-----------
 
-<view wx:for="{{arr}}">
-{{index}},{{item}}
+<!--修改condition的值-->
+<button bindtap="onTure">按钮</button>
+
+------------------------------
+
+<!-- 反转字符串 -->
+<view >
+  {{str}}
+</view>
+<button bindtap="reverStr">按钮</button>
+
+------------------------------
+
+<view wx:for="{{arr}}"  wx:key= 'index'>
+  {{index}}   :   {{item.id}}    {{item.text}}
+</view>
+
+------------------------------
+
+<view wx:for="{{array}}"  wx:key= 'index'>
+  {{index}}   :   {{item}}
 </view>
 <button bindtap="pushItem">按钮</button>
-----------
+
+------------------------------
+
+<view >
+ {{obj.id}}:{{obj.text}}
+</view>
+<button bindtap="modifyText">按钮</button>
+
+------------------------------
+
+<view class="{{red ? 'active' : ''}}">
+我会改变颜色
+</view>
+
+<button bindtap="modifyColor">修改颜色按钮</button>
+
+------------------------------
+
 

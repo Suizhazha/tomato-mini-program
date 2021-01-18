@@ -2,3 +2,7 @@
 .div1{
 color: red;
 }
+
+.active{
+color: red;
+}
